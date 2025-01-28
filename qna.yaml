@@ -1,0 +1,61 @@
+version: 3
+task_description: "Knowledge about interpreting and analyzing corporate earnings transcripts"
+created_by: "fnefh
+document_outline: "Collection of earnings call transcripts focusing on financial metrics, management discussion & analysis, and corporate performance"
+document:
+  repo: "https://github.com/fnefh/earnings_transcripts"
+  commit: "[your_commit_sha]"
+  patterns: 
+    - "earnings_transcripts/**/*.md"
+
+context_blocks:
+  - name: "Bitcoin Holdings and Strategy"
+    content: |
+      MicroStrategy holds 252,220 bitcoins with a total market value of $18 billion. In Q3 2024, they acquired 25,889 bitcoin for $1.6 billion at an average price of $60,839. The company positions itself as the world's first and largest bitcoin treasury company (BTC).
+
+  - name: "Capital Raising Plans"
+    content: |
+      MicroStrategy announced a 3-year capital raising plan (2025-2027) targeting $42 billion total:
+      - 2025: $10 billion ($5B equity, $5B fixed income)
+      - 2026: $14 billion ($7B equity, $7B fixed income)
+      - 2027: $18 billion ($9B equity, $9B fixed income)
+      Filed largest ATM equity offering in history at $21 billion.
+
+  - name: "Q2 2024 Bitcoin Acquisitions"
+    content: |
+      In Q2 2024, MicroStrategy acquired 12,053 bitcoins:
+      - 11,931 bitcoins purchased for $786M using convertible note proceeds
+      - 122 bitcoins purchased for $8M using excess cash
+      As of July 31st 2024, total holdings were 226,500 bitcoins at an aggregate cost of $8.3B ($36,800 per coin).
+
+  - name: "Software Business Performance"
+    content: |
+      Q2 2024 highlights:
+      - Total revenue: $111.4M (down 7% YoY)
+      - Subscription services revenue: $24M (up 21% YoY)
+      - Non-GAAP subscription billings: $33.4M (up 45% YoY)
+      - Software business operating income: $1.9M
+      Strong cloud migration with highest quarterly cloud bookings to date.
+
+qna_pairs:
+  - context: "MicroStrategy Q2 2024"
+    question: "What is MicroStrategy's current bitcoin holdings and average purchase price?"
+    answer: "As of July 31st 2024, MicroStrategy holds 226,500 bitcoins acquired for an aggregate cost of $8.3 billion, representing an average purchase price of approximately $36,800 per bitcoin."
+  
+  - context: "MicroStrategy Q2 2024"
+    question: "How many bitcoins did MicroStrategy acquire in Q2 2024 and at what cost?"
+    answer: "In Q2 2024, MicroStrategy acquired 12,053 bitcoins - 11,931 bitcoins were purchased for $786 million using convertible note proceeds, and 122 bitcoins were purchased for $8 million using excess cash."
+
+  - context: "MicroStrategy Q2 2024"
+    question: "What is MicroStrategy's BTC Yield target for 2025-2027?"
+    answer: "MicroStrategy is targeting an annual BTC Yield of 4% to 8% for each year from 2025 through 2027. BTC Yield measures the percentage change in the ratio of total Bitcoin holdings to assumed diluted shares outstanding."
+
+  - context: "MicroStrategy Q2 2024"
+    question: "How did MicroStrategy's software business perform in Q2 2024?"
+    answer: "Total revenues were $111.4M (down 7% YoY), with subscription services revenue growing 21% YoY to $24M. Non-GAAP subscription billings grew 45% to $33.4M. The quarter saw record cloud bookings, though the cloud transition is temporarily impacting recognized revenue."
+
+  - context: "MicroStrategy Q2 2024"
+    question: "What debt financing activities did MicroStrategy complete in Q2 2024?"
+    answer: "MicroStrategy issued $800 million of convertible notes due June 2032 at 2.25% annual interest rate with a 35% conversion premium. They also called for redemption of their $650 million 2025 convertible notes, which were substantially converted to Class A common stock."
+
+  # Add more Q&A pairs from other transcripts...
