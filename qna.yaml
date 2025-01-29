@@ -1,39 +1,60 @@
-schema_version: v1
-metadata:
-  name: "MicroStrategy Earnings Calls Q2-Q3 2024"
-  description: "Knowledge base covering MicroStrategy's business strategy, Bitcoin holdings, and financial performance"
-  date: "2024-10-30"
+version: 3
+domain: finance
+created_by: instructlab
+seed_examples:
+  - context: |
+      MicroStrategy describes itself as the world's first and largest Bitcoin treasury company (BTC). As of Q3 2024, MicroStrategy holds 252,220 Bitcoins with a total Bitcoin market value of $18 billion. Since June 30, 2024, they acquired an additional 25,889 Bitcoin for a total purchase cost of $1.6 billion, at an average price of $60,839. They acquire Bitcoin through three primary mechanisms: debt financing ($4.3B in convertible debt at 0.8% annual cost), equity issuances ($4.3B raised), and cash flows from software operations ($836M invested).
+    questions_and_answers:
+      - question: |
+          What is MicroStrategy's current business model?
+        answer: |
+          MicroStrategy is the world's first and largest Bitcoin treasury company (BTC), combining a Bitcoin treasury strategy with an enterprise analytics software business.
+      - question: |
+          How many Bitcoins does MicroStrategy currently hold?
+        answer: |
+          As of Q3 2024, MicroStrategy holds 252,220 Bitcoins valued at $18 billion.
+      - question: |
+          What are MicroStrategy's three mechanisms for acquiring Bitcoin?
+        answer: |
+          MicroStrategy acquires Bitcoin through debt financing ($4.3B in convertible debt), equity issuances ($4.3B raised), and cash flows from software operations ($836M invested).
 
-root:
-  business_overview:
-    company_identity:
-      - question: "What is MicroStrategy's current business model and how do they describe themselves?"
-        answer: "MicroStrategy describes itself as the world's first and largest Bitcoin treasury company (BTC). They are a publicly traded company that combines two main elements: 1) A Bitcoin treasury strategy where they use Bitcoin as their primary reserve asset, and 2) An enterprise analytics software business providing AI-powered solutions. They use proceeds from equity and debt financings, along with operational cash flows, to strategically accumulate Bitcoin."
+  - context: |
+      MicroStrategy announced its ambitious 21/21 Plan, a three-year capital raising strategy for 2025-2027, targeting to raise $42 billion total ($21B in equity and $21B in fixed income). The yearly targets are: 2025: $10B ($5B each in equity and fixed income), 2026: $14B ($7B each), and 2027: $18B ($9B each). They've filed a $21B ATM equity program, the largest in capital markets history. The fixed income component can include convertible debt, preferred equity, and hybrid capital instruments.
+    questions_and_answers:
+      - question: |
+          What is MicroStrategy's 21/21 Plan?
+        answer: |
+          The 21/21 Plan is a three-year capital raising strategy (2025-2027) targeting to raise $42 billion total: $21B in equity and $21B in fixed income.
+      - question: |
+          What are the yearly capital raising targets in the 21/21 Plan?
+        answer: |
+          The yearly targets are: 2025: $10B ($5B each in equity and fixed income), 2026: $14B ($7B each), and 2027: $18B ($9B each).
+      - question: |
+          What types of instruments can be included in the fixed income component?
+        answer: |
+          The fixed income component can include convertible debt, preferred equity, hybrid capital instruments, and other similar instruments.
 
-    bitcoin_strategy:
-      holdings:
-        - question: "What are MicroStrategy's current Bitcoin holdings and acquisition strategy?"
-          answer: "As of Q3 2024, MicroStrategy holds 252,220 Bitcoins valued at $18 billion. They acquire Bitcoin through three mechanisms: 1) Debt financing ($4.3B in convertible debt at 0.8% annual cost), 2) Equity issuances ($4.3B raised), and 3) Cash flows from software operations ($836M invested). Since June 30, 2024, they acquired an additional 25,889 Bitcoin for $1.6 billion at an average price of $60,839."
+  - context: |
+      MicroStrategy is transitioning from on-premise to cloud-based solutions, with subscription services now comprising 24% of total revenues. Their cloud platform, MicroStrategy ONE, is available on Azure, AWS, and Google Cloud marketplaces with AI-powered functionality. Subscription billings grew 93% year-over-year in Q3 2024 to $32.4 million, their fourth straight quarter of double-digit growth. The strong growth in subscription billings was driven by both existing customer migrations to the cloud and new customer wins.
+    questions_and_answers:
+      - question: |
+          How is MicroStrategy's software business evolving?
+        answer: |
+          MicroStrategy is transitioning from on-premise to cloud-based solutions, with subscription services comprising 24% of total revenues and their cloud platform available on major cloud marketplaces.
+      - question: |
+          What was the growth in subscription billings for Q3 2024?
+        answer: |
+          Subscription billings grew 93% year-over-year in Q3 2024 to $32.4 million, marking their fourth straight quarter of double-digit growth.
+      - question: |
+          What is driving the growth in subscription billings?
+        answer: |
+          The growth in subscription billings is driven by both existing customer migrations to the cloud and new customer wins.
 
-      capital_plan:
-        - question: "What is MicroStrategy's '21/21 Plan' for capital raising?"
-          answer: "The 21/21 Plan is a three-year strategy (2025-2027) targeting to raise $42 billion total: $21B in equity and $21B in fixed income. Annual targets are: 2025: $10B ($5B each), 2026: $14B ($7B each), and 2027: $18B ($9B each). They've filed a $21B ATM equity program, the largest in capital markets history. Fixed income can include convertible debt, preferred equity, and hybrid instruments."
+document_outline: |
+  Information about MicroStrategy's business model, Bitcoin strategy, and financial performance based on Q2-Q3 2024 earnings calls.
 
-    software_business:
-      cloud_transition:
-        - question: "How is MicroStrategy's software business transitioning to the cloud?"
-          answer: "MicroStrategy is transitioning from on-premise to cloud-based solutions, with subscription services now comprising 24% of total revenues. Their cloud platform, MicroStrategy ONE, is available on Azure, AWS, and Google Cloud with AI-powered functionality. Subscription billings grew 93% year-over-year in Q3 2024. While this transition temporarily impacts total revenue, they expect long-term growth from recurring cloud revenues."
-
-  financial_metrics:
-    btc_yield:
-      - question: "What is BTC yield and how does MicroStrategy measure it?"
-        answer: "BTC yield is MicroStrategy's key performance indicator measuring the period-to-period percentage change in the ratio of total Bitcoin holdings to assumed diluted shares outstanding. A positive BTC yield indicates they're increasing Bitcoin holdings faster than diluted shares. In Q3 2024, Bitcoin holdings increased 33.3% while assumed diluted shares increased only 13.2%, demonstrating positive BTC yield."
-
-    debt_management:
-      - question: "How does MicroStrategy manage its debt profile and maturities?"
-        answer: "MicroStrategy has $4.3B in convertible debt at a 0.8% blended annual cost. Their debt maturities are spread over several years (nearest in 2027) with a weighted average maturity of five years. They recently redeemed $500M in senior secured notes, making all Bitcoin holdings unencumbered. They actively manage their debt profile through efficient capital raising, alternating between equity and debt raises."
-
-  corporate_governance:
-    voting_control:
-      - question: "How might the 21/21 Plan affect voting control of the company?"
-        answer: "Michael Saylor currently holds slightly over 50% of voting stock. With the capital raising plan, his voting interest is expected to decrease into the high 40s or potentially mid-40s. Management views this positively, seeing it as an opportunity for greater shareholder partnership while maintaining sufficient voting shares to keep the company on its strategic course."
+document:
+  repo: "https://github.com/fnefh/earnings_transcripts"
+  commit: 20d8a7b0d05c2b17f378a42abdda926867ea34a7
+  patterns: 
+    - "earnings_transcripts/microstrategy/*.md"
