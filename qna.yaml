@@ -55,6 +55,6 @@ document_outline: |
 
 document:
   repo: "https://github.com/fnefh/earnings_transcripts"
-  commit: 20d8a7b0d05c2b17f378a42abdda926867ea34a7
+  commit: d9db7972b9f72af02bff5c46a7c90cbee856244b
   patterns: 
     - "earnings_transcripts/microstrategy/*.md"
