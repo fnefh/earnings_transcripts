@@ -1,6 +1,6 @@
 version: 3
 domain: finance
-created_by: instructlab
+created_by: fnefh
 seed_examples:
   - context: |
       MicroStrategy describes itself as the world's first and largest Bitcoin treasury company (BTC). As of Q3 2024, MicroStrategy holds 252,220 Bitcoins with a total Bitcoin market value of $18 billion. Since June 30, 2024, they acquired an additional 25,889 Bitcoin for a total purchase cost of $1.6 billion, at an average price of $60,839. They acquire Bitcoin through three primary mechanisms: debt financing ($4.3B in convertible debt at 0.8% annual cost), equity issuances ($4.3B raised), and cash flows from software operations ($836M invested).
@@ -49,12 +49,43 @@ seed_examples:
           What is driving the growth in subscription billings?
         answer: |
           The growth in subscription billings is driven by both existing customer migrations to the cloud and new customer wins.
+  - context: |
+      MicroStrategy's software revenue for Q3 2024 was $129.5 million, with a gross margin of 82%. The company's enterprise analytics platform serves over 2,500 enterprise customers globally. Their cloud platform, MicroStrategy ONE, has achieved FedRAMP authorization, opening up opportunities in the federal government sector. The platform's AI capabilities include natural language querying, automated insights generation, and predictive analytics features.
+    questions_and_answers:
+      - question: |
+          What was MicroStrategy's software revenue and gross margin in Q3 2024?
+        answer: |
+          MicroStrategy's software revenue was $129.5 million with a gross margin of 82% in Q3 2024.
+      - question: |
+          What significant certification did MicroStrategy ONE receive?
+        answer: |
+          MicroStrategy ONE received FedRAMP authorization, which opens up opportunities in the federal government sector.
+      - question: |
+          What AI capabilities does MicroStrategy's platform offer?
+        answer: |
+          The platform offers AI capabilities including natural language querying, automated insights generation, and predictive analytics features.
+
+  - context: |
+      MicroStrategy's Bitcoin holdings have appreciated significantly since their initial investment. Their average purchase price across all Bitcoin holdings is $31,544, compared to the current market price of approximately $71,000, representing an unrealized gain of 125%. The company's Bitcoin-backed loans have a loan-to-value ratio of 15%, well below the 50% margin call threshold. Their software business generates approximately $90 million in annual free cash flow, which partially funds their ongoing Bitcoin acquisition strategy.
+    questions_and_answers:
+      - question: |
+          What is MicroStrategy's average Bitcoin purchase price and current unrealized gain?
+        answer: |
+          MicroStrategy's average Bitcoin purchase price is $31,544, and with the current price around $71,000, they have an unrealized gain of 125%.
+      - question: |
+          What is the loan-to-value ratio of MicroStrategy's Bitcoin-backed loans?
+        answer: |
+          The loan-to-value ratio is 15%, which is well below the 50% margin call threshold.
+      - question: |
+          How much annual free cash flow does MicroStrategy's software business generate?
+        answer: |
+          MicroStrategy's software business generates approximately $90 million in annual free cash flow.
 
 document_outline: |
   Information about MicroStrategy's business model, Bitcoin strategy, and financial performance based on Q2-Q3 2024 earnings calls.
 
 document:
   repo: "https://github.com/fnefh/earnings_transcripts"
-  commit: d9db7972b9f72af02bff5c46a7c90cbee856244b
-  patterns: 
-    - "earnings_transcripts/microstrategy/*.md"
+  commit: "66209047529eaf60265bdd20c48fd865215f4dfa"
+  patterns:
+    - "earnings_transcripts/*.md"
