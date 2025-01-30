@@ -85,7 +85,8 @@ document_outline: |
   Information about MicroStrategy's business model, Bitcoin strategy, and financial performance based on Q2-Q3 2024 earnings calls.
 
 document:
-  repo: "https://github.com/fnefh/earnings_transcripts"
-  commit: "66209047529eaf60265bdd20c48fd865215f4dfa"
+  repo: https://github.com/fnefh/earnings_transcripts
+  commit: 650cb18c82a36e93237d661ffb1a3f5afea1215f
   patterns:
-    - "earnings_transcripts/*.md"
+    - microstrategy/*.md
+    - knowledge/finance/earnings_transcripts/microstrategy/*.md
